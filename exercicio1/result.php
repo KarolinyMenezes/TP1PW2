@@ -1,37 +1,37 @@
 <?php
 
     $PESO = $_POST['PESO'];
-    $ALTURA = "<br>" . $_POST['ALTURA'];
+    $ALTURA =  $_POST['ALTURA'];
 
-    $IMC = $_PESO / ($ALTURA * $ALTURA);
+    $IMC = $PESO / ($ALTURA * $ALTURA);
 
-    if($PESO < 18.5)
+    if($IMC < 18.5)
     {
         echo "Você está abaixo do peso normal";
     }
     else
 
-    if($PESO > 18.5 && $PESO < 24.9) 
+    if($IMC > 18.5 && $IMC < 24.9) 
     {
         echo "Você está com o peso normal";
     }
     else
 
-        if($PESO > 25 && $PESO < 29,9)
+        if($IMC > 25 && $IMC < 29.9)
             {
-                echo "Você está com excesso de peso"
+                echo "Você está com excesso de peso";
             }
             else
 
-                if($PESO > 30)
+                if($IMC > 30)
                     {
-                        echo "Você está em nível de obesidade"
+                        echo "Você está em nível de obesidade";
                     }
                     else
 
-                        if($PESO 35 >)
+                        if($IMC >= 35)
                             {
-                                echo "Você está em nível de obesidade extrema"
+                                echo "Você está em nível de obesidade extrema";
                             }
                             else
 ?>
